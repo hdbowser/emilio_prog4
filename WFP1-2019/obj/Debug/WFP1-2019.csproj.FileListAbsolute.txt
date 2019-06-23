@@ -1,0 +1,93 @@
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.exe.config
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.exe
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.pdb
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.csprojResolveAssemblyReference.cache
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.Properties.Resources.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.csproj.GenerateResource.Cache
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.exe
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.pdb
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.MainForm.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmEstudiante.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmListadoEstudiantes.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmEditor.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmDialogos.resources
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\bin\Debug\INF518Core.dll
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\WFP1-2019\bin\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.exe.config
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.exe
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.exe
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\bin\Debug\WFP1-2019.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\bin\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\bin\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.csprojResolveAssemblyReference.cache
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmDialogos.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmEditor.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmEstudiante.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmListadoEstudiantes.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.MainForm.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.Properties.Resources.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1-2019.csproj.GenerateResource.Cache
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.Admin.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.Loging.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmCambiar_Contraseña.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmProfesor.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmListadoProfesores.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmListadoUsuario.resources
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\WFP1-2019\obj\Debug\WFP1_2019.frmAulla.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\bin\Debug\WFP1-2019.exe.config
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1-2019.exe
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1-2019.pdb
+C:\Users\Emilio\Desktop\Final\WFP1-2019\bin\Debug\WFP1-2019.exe
+C:\Users\Emilio\Desktop\Final\WFP1-2019\bin\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Final\WFP1-2019\bin\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1-2019.csprojResolveAssemblyReference.cache
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.Admin.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmCambiar_Contraseña.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmActualizaPerfil.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmAulla.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmDialogos.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmEditor.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmEstudiante.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoEstudiantes.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoProfesores.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmProfesor.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.Loging.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.MainForm.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.Properties.Resources.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoUsuario.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1-2019.csproj.GenerateResource.Cache
+C:\Users\Emilio\Desktop\Final\WFP1-2019\bin\Debug\WFP1-2019.pdb
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmAsignatura.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmCentro.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.Asignaturas.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmSecciones.resources
+C:\Users\Emilio\Desktop\Final\WFP1-2019\obj\Debug\WFP1_2019.frmBackUp.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\bin\Debug\WFP1-2019.exe.config
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1-2019.exe
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1-2019.pdb
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\bin\Debug\WFP1-2019.exe
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\bin\Debug\WFP1-2019.pdb
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\bin\Debug\INF518Core.dll
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\bin\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1-2019.csprojResolveAssemblyReference.cache
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.Admin.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.Asignaturas.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmCambiar_Contraseña.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmActualizaPerfil.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmAsignatura.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmAulla.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmBackUp.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmCentro.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmDialogos.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmEditor.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmEstudiante.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoEstudiantes.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoProfesores.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmProfesor.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmSecciones.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.Loging.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.MainForm.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.Properties.Resources.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1_2019.frmListadoUsuario.resources
+C:\Users\hdbow\Documents\Proyectos\Final\WFP1-2019\obj\Debug\WFP1-2019.csproj.GenerateResource.Cache

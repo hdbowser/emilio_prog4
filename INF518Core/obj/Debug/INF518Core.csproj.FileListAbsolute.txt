@@ -1,0 +1,20 @@
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\INF518Core\bin\Debug\INF518Core.dll
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\INF518Core\bin\Debug\INF518Core.pdb
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\INF518Core\obj\Debug\INF518Core.dll
+C:\Users\Nelson Abreu\Desktop\Proyectos VS\WFP1-2019\INF518Core\obj\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\INF518Core\bin\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\INF518Core\bin\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\INF518Core\obj\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Programacion IV\WFP1-2019\INF518Core\obj\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Final\INF518Core\bin\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Final\INF518Core\bin\Debug\INF518Core.pdb
+C:\Users\Emilio\Desktop\Final\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache
+C:\Users\Emilio\Desktop\Final\INF518Core\obj\Debug\INF518Core.dll
+C:\Users\Emilio\Desktop\Final\INF518Core\obj\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\bin\Debug\INF518Core.dll
+C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\bin\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache
+C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.dll
+C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.pdb
