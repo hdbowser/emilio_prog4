@@ -60,6 +60,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(207, 20);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.Text = "miguel";
             // 
             // txtPassword
             // 
@@ -68,6 +69,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(207, 20);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "12345";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnIniciarSesion
@@ -82,6 +84,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(134, 92);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(71, 23);

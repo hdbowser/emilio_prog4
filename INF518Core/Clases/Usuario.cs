@@ -15,7 +15,7 @@ namespace INF518Core.Clases
         public string NombreUsuario { get; set; }
         public string Password { get; set; }
         public string TipoUsuarioID { get; set; }
-        public int IdTipoUsuario { get; set; }
+        public string TipoUsuario { get; set; }
         public string Permisos { get; set; }
         public string Observaciones { get; set; }
         public bool Inactivo { get; set; }
@@ -47,6 +47,8 @@ namespace INF518Core.Clases
                             this.UsuarioID = Convert.ToInt32(reader["UsuarioID"].ToString());
                             this.Nombre = reader["Nombre"].ToString();
                             this.NombreUsuario = reader["Usuario"].ToString();
+                            this.TipoUsuario = reader["TipoUsuario"].ToString();
+                            this.Permisos = reader["Permisos"].ToString();
                         }
                     }
                 }

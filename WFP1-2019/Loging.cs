@@ -26,6 +26,7 @@ namespace WFP1_2019
             usr.NombreUsuario = this.txtUsuario.Text;
             usr.Password = this.txtPassword.Text;
             usr = usr.ValidarLogin();
+            UsuarioActual = usr;
 
             if (usr.UsuarioID != 0)
             {
