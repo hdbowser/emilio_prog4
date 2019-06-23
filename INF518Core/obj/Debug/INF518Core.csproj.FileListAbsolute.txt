@@ -18,3 +18,8 @@ C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\bin\Debug\INF518Core.pdb
 C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache
 C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.dll
 C:\Users\hdbow\Documents\Proyectos\Final\INF518Core\obj\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\INF518Core\bin\Debug\INF518Core.dll
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\INF518Core\bin\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\INF518Core\obj\Debug\INF518Core.dll
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\INF518Core\obj\Debug\INF518Core.pdb
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\INF518Core\obj\Debug\INF518Core.csprojResolveAssemblyReference.cache

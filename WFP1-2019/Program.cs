@@ -16,7 +16,14 @@ namespace WFP1_2019
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Loging login = new Loging();
+
+            Application.Run(login);
+
+            if(login.DialogResult == DialogResult.OK)
+            {
+                Application.Run(new MainForm(login.UsuarioActual));
+            }
 
         }
     }

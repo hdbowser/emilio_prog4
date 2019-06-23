@@ -46,9 +46,9 @@
     <Compile Include="Clases\Profesor.cs" />
     <Compile Include="Clases\Response.cs" />
     <Compile Include="Clases\TipoEstudiante.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Inscripcion\Mantenimiento.cs" />
-    <Compile Include="MantenimientoBase.cs" />
-    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Clases\MantenimientoBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
