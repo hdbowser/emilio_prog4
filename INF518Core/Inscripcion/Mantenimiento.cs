@@ -208,7 +208,7 @@ namespace INF518Core.Inscripcion
             }
             return dt;
         }
-        public Profesor GetProfesorInfo(int ID)
+       /* public Profesor GetProfesorInfo(int ID)
         {
             Profesor item = new Profesor();
             string sql = string.Format("SELECT ID, Nombre, Apellido, Cedula, FechaNacimiento, EstadoCivil, TelefonoCasa, TelefonoMovil, Email, Observaciones FROM tblProfesor WHERE ID={0}", ID);
@@ -249,7 +249,7 @@ namespace INF518Core.Inscripcion
             }
 
             return item;
-        }
+        }*/
 
         public void Actualizar(int ID )
         {
@@ -260,9 +260,9 @@ namespace INF518Core.Inscripcion
                 string sql = string.Format("UPDATE tblEstudiantes set Nombre = @Nombre   WHERE ID={0}", ID);
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                
+                System.Console.WriteLine(ex.Message);
             }
             finally
             {

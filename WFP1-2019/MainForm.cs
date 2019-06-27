@@ -132,7 +132,8 @@ namespace WFP1_2019
         {
             frmListadoProfesores p = new frmListadoProfesores();
             p.StartPosition = FormStartPosition.CenterScreen;
-            p.ShowDialog();
+            p.MdiParent = this;
+            p.Show();
         }
 
         private void actualizarPerfilToolStripMenuItem_Click(object sender, EventArgs e)

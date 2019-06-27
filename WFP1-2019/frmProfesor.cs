@@ -15,20 +15,11 @@ namespace WFP1_2019
 {
     public partial class frmProfesor : Form
     {
-       
         Profesor profesor;
-        Mantenimiento mant;
-        public frmProfesor(int ID)
+        public frmProfesor()
         {
             InitializeComponent();
             profesor = new Profesor();
-            mant = new Mantenimiento();
-            if (ID > 0)
-            {
-                profesor = mant.GetProfesorInfo(ID);
-                profesor.ID = ID;
-                actualizarFormulario();
-            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -42,7 +33,6 @@ namespace WFP1_2019
             profesor.FechaNacimiento = dtpFechaNacimiento.Value.Date;
             profesor.Nombre = txtNombre.Text;
             profesor.Apellido = txtApellido.Text;
-            profesor.EstadoCivil = txtEstadoCivil.Text;
             profesor.TelefonoCasa = txtTelefonoCasa.Text;
             profesor.TelefonoMovil = txtTelefonoPersonal.Text;
             profesor.Email = txtEmail.Text;
@@ -72,7 +62,7 @@ namespace WFP1_2019
             profesor.Apellido = this.txtApellido.Text;
             profesor.Cedula = mtxtCedula.Text;
             profesor.FechaNacimiento = dtpFechaNacimiento.Value;
-            profesor.EstadoCivil = txtEstadoCivil.Text;
+
             profesor.TelefonoCasa = txtTelefonoCasa.Text;
             profesor.TelefonoMovil = txtTelefonoPersonal.Text;
             profesor.Email = txtEmail.Text;
@@ -84,7 +74,7 @@ namespace WFP1_2019
             txtApellido.Text = profesor.Apellido;
             dtpFechaNacimiento.Value = profesor.FechaNacimiento.Date;
             mtxtCedula.Text = profesor.Cedula;
-            txtEstadoCivil.Text = profesor.EstadoCivil;
+    
             txtTelefonoCasa.Text = profesor.TelefonoCasa;
             txtTelefonoPersonal.Text = profesor.TelefonoMovil;
             txtEmail.Text = profesor.Email;
@@ -117,10 +107,9 @@ namespace WFP1_2019
             return true;
         }
 
-        public frmProfesor()
+        private void frmProfesor_Load(object sender, EventArgs e)
         {
-        }
 
-        
+        }
     }
 }
