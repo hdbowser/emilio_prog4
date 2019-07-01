@@ -30,6 +30,7 @@
         {
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.cbbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +95,16 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
+            // cbbEstadoCivil
+            // 
+            this.cbbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbEstadoCivil.FormattingEnabled = true;
+            this.cbbEstadoCivil.Location = new System.Drawing.Point(109, 125);
+            this.cbbEstadoCivil.Name = "cbbEstadoCivil";
+            this.cbbEstadoCivil.Size = new System.Drawing.Size(121, 21);
+            this.cbbEstadoCivil.TabIndex = 31;
+            this.cbbEstadoCivil.Tag = " ";
+            // 
             // txtObservaciones
             // 
             this.txtObservaciones.Location = new System.Drawing.Point(109, 242);
@@ -103,6 +113,7 @@
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(413, 47);
             this.txtObservaciones.TabIndex = 26;
+            this.txtObservaciones.Tag = " ";
             // 
             // label12
             // 
@@ -120,6 +131,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(263, 20);
             this.txtEmail.TabIndex = 24;
+            this.txtEmail.Tag = " ";
             // 
             // label11
             // 
@@ -137,15 +149,16 @@
             this.txtTelefonoPersonal.Name = "txtTelefonoPersonal";
             this.txtTelefonoPersonal.Size = new System.Drawing.Size(161, 20);
             this.txtTelefonoPersonal.TabIndex = 22;
+            this.txtTelefonoPersonal.Tag = " ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(11, 184);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 13);
+            this.label10.Size = new System.Drawing.Size(76, 13);
             this.label10.TabIndex = 23;
-            this.label10.Text = "Telefono  Personal";
+            this.label10.Text = "Telefono movil";
             // 
             // txtTelefonoCasa
             // 
@@ -154,15 +167,16 @@
             this.txtTelefonoCasa.Name = "txtTelefonoCasa";
             this.txtTelefonoCasa.Size = new System.Drawing.Size(161, 20);
             this.txtTelefonoCasa.TabIndex = 20;
+            this.txtTelefonoCasa.Tag = " ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(10, 155);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 13);
+            this.label9.Size = new System.Drawing.Size(90, 13);
             this.label9.TabIndex = 21;
-            this.label9.Text = "Telefono de Casa";
+            this.label9.Text = "Telefono de casa";
             // 
             // label8
             // 
@@ -211,17 +225,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(10, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Cédula";
+            this.label1.Text = "Cédula *";
             // 
             // mtxtCedula
             // 
             this.mtxtCedula.Location = new System.Drawing.Point(108, 68);
-            this.mtxtCedula.Mask = "999-9999999-9";
+            this.mtxtCedula.Mask = "000-0000000-0";
             this.mtxtCedula.Name = "mtxtCedula";
             this.mtxtCedula.Size = new System.Drawing.Size(87, 20);
             this.mtxtCedula.TabIndex = 0;
+            this.mtxtCedula.Tag = "*";
             this.mtxtCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNombre
@@ -232,6 +247,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(202, 20);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.Tag = "*";
             // 
             // txtApellido
             // 
@@ -240,33 +256,34 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(202, 20);
             this.txtApellido.TabIndex = 3;
+            this.txtApellido.Tag = "*";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(10, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Nombre *";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(10, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Apellido";
+            this.label4.Text = "Apellido *";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(10, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.Size = new System.Drawing.Size(98, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Fecha Nacimiento";
+            this.label5.Text = "Fecha nacimiento *";
             // 
             // dtpFechaNacimiento
             // 
@@ -275,6 +292,7 @@
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(117, 20);
             this.dtpFechaNacimiento.TabIndex = 1;
+            this.dtpFechaNacimiento.Tag = " ";
             // 
             // btnAceptar
             // 
@@ -295,14 +313,7 @@
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // cbbEstadoCivil
-            // 
-            this.cbbEstadoCivil.FormattingEnabled = true;
-            this.cbbEstadoCivil.Location = new System.Drawing.Point(109, 125);
-            this.cbbEstadoCivil.Name = "cbbEstadoCivil";
-            this.cbbEstadoCivil.Size = new System.Drawing.Size(121, 21);
-            this.cbbEstadoCivil.TabIndex = 31;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmProfesor
             // 

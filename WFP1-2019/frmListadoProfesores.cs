@@ -60,8 +60,12 @@ namespace WFP1_2019
 
         private void btnModificar_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show(dataGridView1.CurrentRow.Cells[0].FormattedValue.ToString());
+            Profesor p = new Profesor();
+            p.ProfesorID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].FormattedValue.ToString());
+            p = p.Detalle();
 
+            frmProfesor frm = new frmProfesor(p);
+            frm.ShowDialog();
         }
         public void Buscar()
         {
@@ -69,12 +73,17 @@ namespace WFP1_2019
             DataTable dtt = new DataTable();
             dtt = p.BuscarProfesores(txtBusqueda.Text);
             dataGridView1.DataSource = dtt;
-
         }
 
         private void frmListadoProfesores_Load(object sender, EventArgs e)
         {
             this.Buscar();
+        }
+
+        private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            this.btnModificar.Enabled = true;
+
         }
     }
 }
