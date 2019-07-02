@@ -119,3 +119,4 @@ C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frm
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.csproj.GenerateResource.Cache
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.exe
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.pdb
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmEditorSeccion.resources

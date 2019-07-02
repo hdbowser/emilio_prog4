@@ -21,5 +21,11 @@ namespace WFP1_2019
         {
 
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            frmEditorSeccion frm = new frmEditorSeccion();
+            frm.ShowDialog();
+        }
     }
 }

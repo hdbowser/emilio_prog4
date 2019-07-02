@@ -217,5 +217,12 @@ namespace WFP1_2019
             }
             return false;
         }
+
+        private void carreraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSecciones frm = new frmSecciones();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
