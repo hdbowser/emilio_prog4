@@ -41,12 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Asignatura.cs" />
     <Compile Include="Clases\Aula.cs" />
     <Compile Include="Clases\Carrera.cs" />
     <Compile Include="Clases\Centro.cs" />
     <Compile Include="Clases\Estudiante.cs" />
     <Compile Include="Clases\Profesor.cs" />
     <Compile Include="Clases\Response.cs" />
+    <Compile Include="Clases\Seccion.cs" />
     <Compile Include="Clases\TipoEstudiante.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Inscripcion\Mantenimiento.cs" />

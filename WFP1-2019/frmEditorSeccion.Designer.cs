@@ -29,19 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbbCentro = new System.Windows.Forms.ComboBox();
-            this.cbbAula = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbbDia1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbbProfesor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dttpHoraInicioDia1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dttpHoraFinDia1 = new System.Windows.Forms.DateTimePicker();
+            this.cbbAsignatura = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dttpHoraFinDia2 = new System.Windows.Forms.DateTimePicker();
@@ -49,17 +38,32 @@
             this.dttpHoraInicioDia2 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.cbbDia2 = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dttpHoraFinDia1 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dttpHoraInicioDia1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbbDia1 = new System.Windows.Forms.ComboBox();
+            this.cbbProfesor = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbbAula = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbbCentro = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.cbbAsignatura = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.cbbAsignatura);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -72,129 +76,27 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 374);
+            this.groupBox1.Size = new System.Drawing.Size(395, 418);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // cbbAsignatura
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Centro";
+            this.cbbAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbAsignatura.FormattingEnabled = true;
+            this.cbbAsignatura.Location = new System.Drawing.Point(10, 324);
+            this.cbbAsignatura.Name = "cbbAsignatura";
+            this.cbbAsignatura.Size = new System.Drawing.Size(364, 21);
+            this.cbbAsignatura.TabIndex = 15;
             // 
-            // cbbCentro
+            // label5
             // 
-            this.cbbCentro.FormattingEnabled = true;
-            this.cbbCentro.Location = new System.Drawing.Point(10, 36);
-            this.cbbCentro.Name = "cbbCentro";
-            this.cbbCentro.Size = new System.Drawing.Size(364, 21);
-            this.cbbCentro.TabIndex = 1;
-            // 
-            // cbbAula
-            // 
-            this.cbbAula.FormattingEnabled = true;
-            this.cbbAula.Location = new System.Drawing.Point(10, 81);
-            this.cbbAula.Name = "cbbAula";
-            this.cbbAula.Size = new System.Drawing.Size(364, 21);
-            this.cbbAula.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Aula";
-            // 
-            // cbbDia1
-            // 
-            this.cbbDia1.FormattingEnabled = true;
-            this.cbbDia1.Location = new System.Drawing.Point(9, 32);
-            this.cbbDia1.Name = "cbbDia1";
-            this.cbbDia1.Size = new System.Drawing.Size(128, 21);
-            this.cbbDia1.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Dia 1";
-            // 
-            // cbbProfesor
-            // 
-            this.cbbProfesor.FormattingEnabled = true;
-            this.cbbProfesor.Location = new System.Drawing.Point(10, 283);
-            this.cbbProfesor.Name = "cbbProfesor";
-            this.cbbProfesor.Size = new System.Drawing.Size(364, 21);
-            this.cbbProfesor.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 267);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Profesor";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dttpHoraFinDia1);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.dttpHoraInicioDia1);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.cbbDia1);
-            this.groupBox2.Location = new System.Drawing.Point(10, 108);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 75);
-            this.groupBox2.TabIndex = 12;
-            this.groupBox2.TabStop = false;
-            // 
-            // dttpHoraInicioDia1
-            // 
-            this.dttpHoraInicioDia1.CustomFormat = "";
-            this.dttpHoraInicioDia1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dttpHoraInicioDia1.Location = new System.Drawing.Point(144, 32);
-            this.dttpHoraInicioDia1.Name = "dttpHoraInicioDia1";
-            this.dttpHoraInicioDia1.ShowUpDown = true;
-            this.dttpHoraInicioDia1.Size = new System.Drawing.Size(99, 20);
-            this.dttpHoraInicioDia1.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(143, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "HoraInicio";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(249, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "HoraFin";
-            // 
-            // dttpHoraFinDia1
-            // 
-            this.dttpHoraFinDia1.CustomFormat = "";
-            this.dttpHoraFinDia1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dttpHoraFinDia1.Location = new System.Drawing.Point(250, 32);
-            this.dttpHoraFinDia1.Name = "dttpHoraFinDia1";
-            this.dttpHoraFinDia1.ShowUpDown = true;
-            this.dttpHoraFinDia1.Size = new System.Drawing.Size(99, 20);
-            this.dttpHoraFinDia1.TabIndex = 14;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Asignatura";
             // 
             // groupBox3
             // 
@@ -265,58 +167,183 @@
             this.cbbDia2.Size = new System.Drawing.Size(128, 21);
             this.cbbDia2.TabIndex = 5;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.dttpHoraFinDia1);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.dttpHoraInicioDia1);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.cbbDia1);
+            this.groupBox2.Location = new System.Drawing.Point(10, 108);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(364, 75);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(249, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "HoraFin";
+            // 
+            // dttpHoraFinDia1
+            // 
+            this.dttpHoraFinDia1.CustomFormat = "";
+            this.dttpHoraFinDia1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dttpHoraFinDia1.Location = new System.Drawing.Point(250, 32);
+            this.dttpHoraFinDia1.Name = "dttpHoraFinDia1";
+            this.dttpHoraFinDia1.ShowUpDown = true;
+            this.dttpHoraFinDia1.Size = new System.Drawing.Size(99, 20);
+            this.dttpHoraFinDia1.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(143, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "HoraInicio";
+            // 
+            // dttpHoraInicioDia1
+            // 
+            this.dttpHoraInicioDia1.CustomFormat = "";
+            this.dttpHoraInicioDia1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dttpHoraInicioDia1.Location = new System.Drawing.Point(144, 32);
+            this.dttpHoraInicioDia1.Name = "dttpHoraInicioDia1";
+            this.dttpHoraInicioDia1.ShowUpDown = true;
+            this.dttpHoraInicioDia1.Size = new System.Drawing.Size(99, 20);
+            this.dttpHoraInicioDia1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Dia 1";
+            // 
+            // cbbDia1
+            // 
+            this.cbbDia1.FormattingEnabled = true;
+            this.cbbDia1.Location = new System.Drawing.Point(9, 32);
+            this.cbbDia1.Name = "cbbDia1";
+            this.cbbDia1.Size = new System.Drawing.Size(128, 21);
+            this.cbbDia1.TabIndex = 5;
+            // 
+            // cbbProfesor
+            // 
+            this.cbbProfesor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbProfesor.FormattingEnabled = true;
+            this.cbbProfesor.Location = new System.Drawing.Point(10, 283);
+            this.cbbProfesor.Name = "cbbProfesor";
+            this.cbbProfesor.Size = new System.Drawing.Size(364, 21);
+            this.cbbProfesor.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 267);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Profesor";
+            // 
+            // cbbAula
+            // 
+            this.cbbAula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbAula.FormattingEnabled = true;
+            this.cbbAula.Location = new System.Drawing.Point(10, 81);
+            this.cbbAula.Name = "cbbAula";
+            this.cbbAula.Size = new System.Drawing.Size(364, 21);
+            this.cbbAula.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Aula";
+            // 
+            // cbbCentro
+            // 
+            this.cbbCentro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbCentro.FormattingEnabled = true;
+            this.cbbCentro.Location = new System.Drawing.Point(10, 36);
+            this.cbbCentro.Name = "cbbCentro";
+            this.cbbCentro.Size = new System.Drawing.Size(364, 21);
+            this.cbbCentro.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Centro";
+            // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button1.Location = new System.Drawing.Point(332, 392);
+            this.button1.Location = new System.Drawing.Point(330, 439);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(251, 392);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(249, 439);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // cbbAsignatura
+            // txtObservaciones
             // 
-            this.cbbAsignatura.FormattingEnabled = true;
-            this.cbbAsignatura.Location = new System.Drawing.Point(10, 323);
-            this.cbbAsignatura.Name = "cbbAsignatura";
-            this.cbbAsignatura.Size = new System.Drawing.Size(364, 21);
-            this.cbbAsignatura.TabIndex = 15;
+            this.txtObservaciones.Location = new System.Drawing.Point(10, 369);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(364, 35);
+            this.txtObservaciones.TabIndex = 16;
             // 
-            // label5
+            // label4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 307);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Asignatura";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 353);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Observaciones";
             // 
             // frmEditorSeccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 431);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(421, 471);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmEditorSeccion";
             this.Text = "Sección";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -347,6 +374,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dttpHoraInicioDia1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtObservaciones;
     }
 }
