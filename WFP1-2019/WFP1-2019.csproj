@@ -96,6 +96,12 @@
     <Compile Include="frmCentro.Designer.cs">
       <DependentUpon>frmCentro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConflictoSecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConflictoSecciones.Designer.cs">
+      <DependentUpon>frmConflictoSecciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDialogos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCentro.resx">
       <DependentUpon>frmCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConflictoSecciones.resx">
+      <DependentUpon>frmConflictoSecciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDialogos.resx">
       <DependentUpon>frmDialogos.cs</DependentUpon>

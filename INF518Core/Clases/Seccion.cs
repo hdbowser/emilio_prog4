@@ -53,24 +53,26 @@ namespace INF518Core.Clases
         {
 
             bool resultado = false;
-            Command.CommandText = "sp_crearSeccion";
-            Command.CommandType = CommandType.StoredProcedure;
-            Command.Parameters.AddWithValue("@centroID", this.CentroID);
-            Command.Parameters.AddWithValue("@profesorID", this.ProfesorID);
-            Command.Parameters.AddWithValue("@asignaturaID", this.AsignaturaID);
-            Command.Parameters.AddWithValue("@capacidad", this.Capacidad);
-            Command.Parameters.AddWithValue("@aulaID", this.AulaID);
-            Command.Parameters.AddWithValue("@dia1ID", this.Dia1ID);
-            Command.Parameters.AddWithValue("@dia2ID", this.Dia2ID);
-            Command.Parameters.AddWithValue("@HoraInicioDia1", this.HoraInicioDia1);
-            Command.Parameters.AddWithValue("@HoraFinDia1", this.HoraFinDia1);
-            Command.Parameters.AddWithValue("@HoraInicioDia2", this.HoraInicioDia2);
-            Command.Parameters.AddWithValue("@HoraFinDia2", this.HoraFinDia2);
-            Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
-
             try
             {
                 Connection.Open();
+                Command = Connection.CreateCommand();
+
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_crearSeccion";
+                Command.Parameters.AddWithValue("@centroID", this.CentroID);
+                Command.Parameters.AddWithValue("@profesorID", this.ProfesorID);
+                Command.Parameters.AddWithValue("@asignaturaID", this.AsignaturaID);
+                Command.Parameters.AddWithValue("@capacidad", this.Capacidad);
+                Command.Parameters.AddWithValue("@aulaID", this.AulaID);
+                Command.Parameters.AddWithValue("@dia1ID", this.Dia1ID);
+                Command.Parameters.AddWithValue("@dia2ID", this.Dia2ID);
+                Command.Parameters.AddWithValue("@HoraInicioDia1", this.HoraInicioDia1);
+                Command.Parameters.AddWithValue("@HoraFinDia1", this.HoraFinDia1);
+                Command.Parameters.AddWithValue("@HoraInicioDia2", this.HoraInicioDia2);
+                Command.Parameters.AddWithValue("@HoraFinDia2", this.HoraFinDia2);
+                Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
+
                 if (Command.ExecuteNonQuery() > 0)
                 {
                     resultado = true;
@@ -87,6 +89,68 @@ namespace INF518Core.Clases
             }
             return resultado;
         }
-          
+        public DataTable VerificarConflictosAula()
+        {
+            DataTable dtt = new DataTable();
+            try
+            {
+                this.Connection.Open();
+                this.Command = Connection.CreateCommand();
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_verificarConflictosAula";
+                Command.Parameters.AddWithValue("@aulaID", this.AulaID);
+                Command.Parameters.AddWithValue("@dia1", this.Dia1ID);
+                Command.Parameters.AddWithValue("@dia2", this.Dia2ID);
+                Command.Parameters.AddWithValue("@horaInicioDia1", this.HoraInicioDia1);
+                Command.Parameters.AddWithValue("@horaInicioDia2", this.HoraInicioDia2);
+                Command.Parameters.AddWithValue("@horaFinDia1", this.HoraFinDia1);
+                Command.Parameters.AddWithValue("@horaFinDia2", this.HoraFinDia2);
+
+                (new SqlDataAdapter(Command)).Fill(dtt);
+                return dtt;
+
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return dtt;
+        }
+
+        public DataTable VerificarConflictosProfesor()
+        {
+            DataTable dtt = new DataTable();
+            try
+            {
+                this.Connection.Open();
+                this.Command = Connection.CreateCommand();
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_verificarConflictosProfesor";
+                Command.Parameters.AddWithValue("@profesorID", this.ProfesorID);
+                Command.Parameters.AddWithValue("@dia1", this.Dia1ID);
+                Command.Parameters.AddWithValue("@dia2", this.Dia2ID);
+                Command.Parameters.AddWithValue("@horaInicioDia1", this.HoraInicioDia1);
+                Command.Parameters.AddWithValue("@horaInicioDia2", this.HoraInicioDia2);
+                Command.Parameters.AddWithValue("@horaFinDia1", this.HoraFinDia1);
+                Command.Parameters.AddWithValue("@horaFinDia2", this.HoraFinDia2);
+
+                (new SqlDataAdapter(Command)).Fill(dtt);
+                return dtt;
+
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return dtt;
+        }
     }
 }

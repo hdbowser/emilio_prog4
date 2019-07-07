@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.cbbAsignatura = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -53,15 +55,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.nudCapacidad = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacidad)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.nudCapacidad);
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.cbbAsignatura);
@@ -76,15 +81,32 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 418);
+            this.groupBox1.Size = new System.Drawing.Size(761, 305);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(380, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Observaciones";
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(383, 181);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(364, 35);
+            this.txtObservaciones.TabIndex = 16;
             // 
             // cbbAsignatura
             // 
             this.cbbAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbAsignatura.FormattingEnabled = true;
-            this.cbbAsignatura.Location = new System.Drawing.Point(10, 324);
+            this.cbbAsignatura.Location = new System.Drawing.Point(383, 89);
             this.cbbAsignatura.Name = "cbbAsignatura";
             this.cbbAsignatura.Size = new System.Drawing.Size(364, 21);
             this.cbbAsignatura.TabIndex = 15;
@@ -92,7 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 308);
+            this.label5.Location = new System.Drawing.Point(380, 72);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 14;
@@ -106,7 +128,7 @@
             this.groupBox3.Controls.Add(this.dttpHoraInicioDia2);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.cbbDia2);
-            this.groupBox3.Location = new System.Drawing.Point(10, 189);
+            this.groupBox3.Location = new System.Drawing.Point(10, 208);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(364, 75);
             this.groupBox3.TabIndex = 13;
@@ -175,7 +197,7 @@
             this.groupBox2.Controls.Add(this.dttpHoraInicioDia1);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cbbDia1);
-            this.groupBox2.Location = new System.Drawing.Point(10, 108);
+            this.groupBox2.Location = new System.Drawing.Point(10, 123);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(364, 75);
             this.groupBox2.TabIndex = 12;
@@ -240,7 +262,7 @@
             // 
             this.cbbProfesor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbProfesor.FormattingEnabled = true;
-            this.cbbProfesor.Location = new System.Drawing.Point(10, 283);
+            this.cbbProfesor.Location = new System.Drawing.Point(383, 36);
             this.cbbProfesor.Name = "cbbProfesor";
             this.cbbProfesor.Size = new System.Drawing.Size(364, 21);
             this.cbbProfesor.TabIndex = 11;
@@ -248,7 +270,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 267);
+            this.label6.Location = new System.Drawing.Point(380, 20);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 13);
             this.label6.TabIndex = 10;
@@ -258,7 +280,7 @@
             // 
             this.cbbAula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbAula.FormattingEnabled = true;
-            this.cbbAula.Location = new System.Drawing.Point(10, 81);
+            this.cbbAula.Location = new System.Drawing.Point(10, 88);
             this.cbbAula.Name = "cbbAula";
             this.cbbAula.Size = new System.Drawing.Size(364, 21);
             this.cbbAula.TabIndex = 3;
@@ -266,7 +288,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 65);
+            this.label2.Location = new System.Drawing.Point(7, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 2;
@@ -293,7 +315,7 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button1.Location = new System.Drawing.Point(330, 439);
+            this.button1.Location = new System.Drawing.Point(698, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -303,7 +325,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(249, 439);
+            this.btnCancelar.Location = new System.Drawing.Point(617, 323);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 2;
@@ -311,28 +333,27 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtObservaciones
+            // label12
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(10, 369);
-            this.txtObservaciones.Multiline = true;
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(364, 35);
-            this.txtObservaciones.TabIndex = 16;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(380, 121);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 13);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Capacidad";
             // 
-            // label4
+            // nudCapacidad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 353);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Observaciones";
+            this.nudCapacidad.Location = new System.Drawing.Point(383, 137);
+            this.nudCapacidad.Name = "nudCapacidad";
+            this.nudCapacidad.Size = new System.Drawing.Size(153, 20);
+            this.nudCapacidad.TabIndex = 20;
             // 
             // frmEditorSeccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 471);
+            this.ClientSize = new System.Drawing.Size(785, 358);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -344,6 +365,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,5 +399,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtObservaciones;
+        private System.Windows.Forms.NumericUpDown nudCapacidad;
+        private System.Windows.Forms.Label label12;
     }
 }
