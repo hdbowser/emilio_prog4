@@ -19,6 +19,13 @@ namespace WFP1_2019
             this.seccion = new Seccion();
             this.Inicializar();
         }
+        public frmEditorSeccion(Seccion s)
+        {
+            InitializeComponent();
+            this.seccion = s;
+            this.Inicializar();
+            this.CargarValores();
+        }
         private Seccion seccion;
 
         private void Inicializar()
@@ -96,14 +103,29 @@ namespace WFP1_2019
                     }
                     else
                     {
-                        if (this.seccion.Registrar())
-                         {
-                             MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                         }
-                         else
-                         {
-                             MessageBox.Show("Error al crear registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                         }
+                        if (this.seccion.SeccionID == 0)
+                        {
+                            if (this.seccion.Registrar())
+                            {
+                                MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al crear registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        else
+                        {
+                            if (this.seccion.Actualizar())
+                            {
+                                MessageBox.Show("Elemento actualizado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al actualizar elemento", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
                 }
             }
@@ -152,8 +174,24 @@ namespace WFP1_2019
 
         private DateTime LimpiarTicks(DateTime dateTime)
         {
-            return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, dateTime.Hour, dateTime.Minute, dateTime.Second);
+            return new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, dateTime.Hour, dateTime.Minute, dateTime.Second);
         }
 
+        private void CargarValores()
+        {
+            this.cbbCentro.SelectedValue = this.seccion.CentroID;
+            this.cbbAula.SelectedValue = this.seccion.AulaID;
+            this.cbbAsignatura.SelectedValue = this.seccion.AsignaturaID;
+            this.cbbProfesor.SelectedValue = this.seccion.ProfesorID;
+            this.cbbDia1.SelectedValue = this.seccion.Dia1ID;
+            this.cbbDia2.SelectedValue = this.seccion.Dia2ID;
+
+            this.dttpHoraInicioDia1.Value = this.seccion.HoraInicioDia1;
+            this.dttpHoraFinDia1.Value = this.seccion.HoraFinDia1;
+            this.dttpHoraInicioDia2.Value = this.seccion.HoraInicioDia2;
+            this.dttpHoraFinDia2.Value = this.seccion.HoraFinDia2;
+            nudCapacidad.Value = this.seccion.Capacidad;
+            txtObservaciones.Text = this.seccion.Observaciones;
+        }
     }
 }

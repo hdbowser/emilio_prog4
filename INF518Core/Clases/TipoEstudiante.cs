@@ -17,7 +17,7 @@ namespace INF518Core.Clases
           
         }
 
-        public int ID { get; set; }
+        public int TipoEstudianteID { get; set; }
         public string Descripcion { get; set; }
         public double CostoCredito  { get; set; }
         public double CostoInscripcion  { get; set; }
@@ -28,7 +28,7 @@ namespace INF518Core.Clases
             //SqlCommand cmd = new SqlCommand();
            
             Command.CommandType = CommandType.StoredProcedure;
-            Command.CommandText = "sp_ListadoTipoEstudiante";
+            Command.CommandText = "sp_listadoTipoEstudiante";
             Command.CommandTimeout = 0;
 
             DataTable dt = new DataTable();
@@ -40,7 +40,7 @@ namespace INF518Core.Clases
             }
             catch (Exception ex)
             {
-                throw ex; //esto es temporal
+                Console.WriteLine(ex.Message);
             }
             finally
             {

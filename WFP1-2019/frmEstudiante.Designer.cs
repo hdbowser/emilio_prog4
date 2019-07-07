@@ -175,7 +175,7 @@
             this.groupBox1.Size = new System.Drawing.Size(596, 399);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+           // this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cbbTipoEstudiante
             // 
@@ -390,7 +390,7 @@
             this.btnGuardarCambios.TabIndex = 3;
             this.btnGuardarCambios.Text = "Guardar";
             this.btnGuardarCambios.UseVisualStyleBackColor = true;
-            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
+            //this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
             // btnEliminar
             // 

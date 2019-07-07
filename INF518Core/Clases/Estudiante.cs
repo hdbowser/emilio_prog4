@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,51 +10,77 @@ namespace INF518Core.Clases
 {
     public class Estudiante : MantenimientoBase
     {
-        public int ID { get; set; }
+        public int EstudianteID { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public string Cedula { get; set; }
-        public int IDTipodeEstudiante { get; set; }
+        public int TipodeEstudianteID { get; set; }
         public string Matricula { get; set; }
-        public char sexo { get; set; }
-        public string EstadoCivil { get; set; }
+        public char Sexo { get; set; }
+        public char EstadoCivil { get; set; }
         public string TelefonoCasa { get; set; }
         public string TelefonoMovil{ get; set; }
         public string Email { get; set; }
         public string Observaciones { get; set; }
-        public bool Inacivo { get; set; }
-        public int IDCarrera { get; set; }
+        public int CarreraID { get; set; }
         public double Balance { get; set; }
-   
+        public bool Inacivo { get; set; }
+
         public bool Matricular()
         {
-
-
-            bool resultado = false;
-            Command.CommandText = "sp_MatricularEstudiante";
-            Command.CommandType = CommandType.StoredProcedure;
-            Command.Parameters.AddWithValue("@Nombre", this.Nombre);
-            Command.Parameters.AddWithValue("@Apellido", this.Apellido);
-            Command.Parameters.AddWithValue("@FechaNacimiento",this.FechaNacimiento);
-            Command.Parameters.AddWithValue("@Cedula", this.Cedula);
-            Command.Parameters.AddWithValue("@IDTipoEstudiante", this.IDTipodeEstudiante);
-            Command.Parameters.AddWithValue("@Matricula", this.Matricula);
-            Command.Parameters.AddWithValue("@Sexo",this.sexo);
-            Command.Parameters.AddWithValue("@EstadoCivil",this.EstadoCivil);
-            Command.Parameters.AddWithValue("@TelefonoCasa",this.TelefonoCasa);
-            Command.Parameters.AddWithValue("@TelefonoMovil",this.TelefonoMovil);
-            Command.Parameters.AddWithValue("@Email", this.Email);
-            Command.Parameters.AddWithValue("@Observaciones",this.Observaciones);
-            Command.Parameters.AddWithValue("@IDCarrera",this.IDCarrera);
-
             try
             {
                 Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandText = "sp_matricularEstudiante";
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.Parameters.AddWithValue("@nombre", this.Nombre);
+                Command.Parameters.AddWithValue("@apellido", this.Apellido);
+                Command.Parameters.AddWithValue("@fechaNacimiento", this.FechaNacimiento);
+                Command.Parameters.AddWithValue("@cedula", this.Cedula);
+                Command.Parameters.AddWithValue("@tipoEstudianteID", this.TipodeEstudianteID);
+                Command.Parameters.AddWithValue("@matricula", this.Matricula);
+                Command.Parameters.AddWithValue("@sexo", this.Sexo);
+                Command.Parameters.AddWithValue("@estadoCivil", this.EstadoCivil);
+                Command.Parameters.AddWithValue("@telefonoCasa", this.TelefonoCasa);
+                Command.Parameters.AddWithValue("@telefonoMovil", this.TelefonoMovil);
+                Command.Parameters.AddWithValue("@email", this.Email);
+                Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
+                Command.Parameters.AddWithValue("@CarreraID", this.CarreraID);
+
                 if (Command.ExecuteNonQuery() > 0)
                 {
-                    resultado = true;
+                    Connection.Close();
+                    return true;
                 }
+            }
+            catch (Exception ex)
+            {
+                Error.ID = 1; // 1: hay un error
+                Error.Mensaje = ex.Message; //el mensaje de error
+                return false;
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return false;
+        }
+
+        public DataTable Buscar(string busquedsa)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                this.Connection.Open();
+                this.Command = Connection.CreateCommand();
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_buscarEstudiantes";
+                Command.Parameters.AddWithValue("@busqueda", busquedsa);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = Command;
+                adapter.Fill(dt);
             }
             catch (Exception ex)
             {
@@ -64,7 +91,7 @@ namespace INF518Core.Clases
             {
                 Connection.Close();
             }
-            return resultado;
+            return dt;
         }
     }
 }

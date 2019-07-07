@@ -23,22 +23,21 @@ namespace INF518Core.Clases
 
         public DataTable Listado()
         {
-            //SqlCommand cmd = new SqlCommand();
-
-            Command.CommandType = CommandType.StoredProcedure;
-            Command.CommandText = "sp_ListadoCarrera";
-            Command.CommandTimeout = 0;
-
             DataTable dt = new DataTable();
-            Adapter = new SqlDataAdapter(Command);
+            
             try
             {
                 Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_ListadoCarrera";
+                Command.CommandTimeout = 0;
+                Adapter = new SqlDataAdapter(Command);
                 Adapter.Fill(dt); //se asigna todo al datatable
             }
             catch (Exception ex)
             {
-                throw ex; //esto es temporal
+                Console.WriteLine(ex.Message);
             }
             finally
             {
