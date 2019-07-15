@@ -21,7 +21,7 @@ namespace INF518Core.Clases
         public string Observaciones { get; set; }
         public int Credito { get; set; }
 
-        public DataTable Listado()
+        public DataTable Buscar(string busqueda)
         {
             DataTable dt = new DataTable();
             
@@ -30,8 +30,9 @@ namespace INF518Core.Clases
                 Connection.Open();
                 Command = Connection.CreateCommand();
                 Command.CommandType = CommandType.StoredProcedure;
-                Command.CommandText = "sp_ListadoCarrera";
+                Command.CommandText = "sp_buscarCarreras";
                 Command.CommandTimeout = 0;
+                Command.Parameters.AddWithValue("@busqueda", busqueda);
                 Adapter = new SqlDataAdapter(Command);
                 Adapter.Fill(dt); //se asigna todo al datatable
             }

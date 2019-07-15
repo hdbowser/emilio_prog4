@@ -193,5 +193,13 @@ namespace WFP1_2019
             nudCapacidad.Value = this.seccion.Capacidad;
             txtObservaciones.Text = this.seccion.Observaciones;
         }
+
+        public void ModoDetalle()
+        {
+            foreach (Control item in groupBox1.Controls)
+            {
+                item.Enabled = false;
+            }
+        }
     }
 }

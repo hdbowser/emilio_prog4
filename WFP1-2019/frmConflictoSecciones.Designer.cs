@@ -34,7 +34,10 @@
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Asignatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraInicioDia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,8 +45,6 @@
             this.Dia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraInicioDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraFinDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 63);
+            this.panel1.Size = new System.Drawing.Size(861, 63);
             this.panel1.TabIndex = 3;
             // 
             // txtMensaje
@@ -64,11 +65,11 @@
             this.txtMensaje.BackColor = System.Drawing.SystemColors.Control;
             this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMensaje.ForeColor = System.Drawing.Color.Red;
-            this.txtMensaje.Location = new System.Drawing.Point(5, 8);
+            this.txtMensaje.Location = new System.Drawing.Point(7, 8);
             this.txtMensaje.Multiline = true;
             this.txtMensaje.Name = "txtMensaje";
             this.txtMensaje.ReadOnly = true;
-            this.txtMensaje.Size = new System.Drawing.Size(775, 46);
+            this.txtMensaje.Size = new System.Drawing.Size(844, 46);
             this.txtMensaje.TabIndex = 1;
             // 
             // panel2
@@ -77,7 +78,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 180);
+            this.panel2.Size = new System.Drawing.Size(861, 173);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView1
@@ -96,6 +97,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
+            this.Asignatura,
             this.Aula,
             this.Dia1,
             this.HoraInicioDia1,
@@ -115,8 +117,27 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Size = new System.Drawing.Size(784, 180);
+            this.dataGridView1.Size = new System.Drawing.Size(861, 173);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnAceptar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 193);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(861, 43);
+            this.panel3.TabIndex = 2;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(776, 8);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 0;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // ID
             // 
@@ -126,6 +147,13 @@
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             this.ID.Visible = false;
+            // 
+            // Asignatura
+            // 
+            this.Asignatura.DataPropertyName = "Asignatura";
+            this.Asignatura.HeaderText = "Asignatura";
+            this.Asignatura.Name = "Asignatura";
+            this.Asignatura.ReadOnly = true;
             // 
             // Aula
             // 
@@ -147,7 +175,7 @@
             // 
             this.HoraInicioDia1.DataPropertyName = "HoraInicioDia1";
             this.HoraInicioDia1.FillWeight = 85.27919F;
-            this.HoraInicioDia1.HeaderText = "Hora inicio dia 1";
+            this.HoraInicioDia1.HeaderText = "Inicio dia 1";
             this.HoraInicioDia1.Name = "HoraInicioDia1";
             this.HoraInicioDia1.ReadOnly = true;
             // 
@@ -155,7 +183,7 @@
             // 
             this.HoraFinDia1.DataPropertyName = "HoraFinDia1";
             this.HoraFinDia1.FillWeight = 85.27919F;
-            this.HoraFinDia1.HeaderText = "Hora fin dia 1";
+            this.HoraFinDia1.HeaderText = "Fin dia 1";
             this.HoraFinDia1.Name = "HoraFinDia1";
             this.HoraFinDia1.ReadOnly = true;
             // 
@@ -171,7 +199,7 @@
             // 
             this.HoraInicioDia2.DataPropertyName = "HoraInicioDia2";
             this.HoraInicioDia2.FillWeight = 85.27919F;
-            this.HoraInicioDia2.HeaderText = "Hora inicio dia 2";
+            this.HoraInicioDia2.HeaderText = "Inicio dia 2";
             this.HoraInicioDia2.Name = "HoraInicioDia2";
             this.HoraInicioDia2.ReadOnly = true;
             // 
@@ -179,34 +207,15 @@
             // 
             this.HoraFinDia2.DataPropertyName = "HoraFinDia2";
             this.HoraFinDia2.FillWeight = 85.27919F;
-            this.HoraFinDia2.HeaderText = "Hora fin dia 2";
+            this.HoraFinDia2.HeaderText = "Fin dia 2";
             this.HoraFinDia2.Name = "HoraFinDia2";
             this.HoraFinDia2.ReadOnly = true;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnAceptar);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 200);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(784, 43);
-            this.panel3.TabIndex = 2;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(705, 8);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 0;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmConflictoSecciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 243);
+            this.ClientSize = new System.Drawing.Size(861, 236);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -231,6 +240,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Asignatura;
         private System.Windows.Forms.DataGridViewTextBoxColumn Aula;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dia1;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoraInicioDia1;

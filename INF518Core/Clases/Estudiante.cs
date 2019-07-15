@@ -40,7 +40,6 @@ namespace INF518Core.Clases
                 Command.Parameters.AddWithValue("@fechaNacimiento", this.FechaNacimiento);
                 Command.Parameters.AddWithValue("@cedula", this.Cedula);
                 Command.Parameters.AddWithValue("@tipoEstudianteID", this.TipodeEstudianteID);
-                Command.Parameters.AddWithValue("@matricula", this.Matricula);
                 Command.Parameters.AddWithValue("@sexo", this.Sexo);
                 Command.Parameters.AddWithValue("@estadoCivil", this.EstadoCivil);
                 Command.Parameters.AddWithValue("@telefonoCasa", this.TelefonoCasa);
@@ -93,5 +92,129 @@ namespace INF518Core.Clases
             }
             return dt;
         }
+        public Estudiante Detalle()
+        {
+            try
+            {
+                this.Connection.Open();
+                this.Command = Connection.CreateCommand();
+                this.Command.CommandType = CommandType.StoredProcedure;
+                this.Command.CommandText = "sp_detalleEstudiante";
+                this.Command.Parameters.AddWithValue("@estudianteID", this.EstudianteID);
+
+                SqlDataReader reader = Command.ExecuteReader();
+
+                if (reader != null && reader.HasRows)
+                {
+                    if (reader.Read())
+                    {
+                        this.Nombre = reader["Nombre"].ToString();
+                        this.Apellido = reader["Apellido"].ToString();
+                        this.FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento"].ToString());
+                        this.Sexo = Convert.ToChar(reader["Sexo"]);
+                        this.Cedula = reader["Cedula"].ToString();
+                        this.TipodeEstudianteID = Convert.ToInt32(reader["TipoEstudianteID"].ToString());
+                        this.Sexo = Convert.ToChar(reader["Sexo"].ToString());
+                        this.EstadoCivil = Convert.ToChar(reader["EstadoCivil"].ToString());
+                        this.TelefonoCasa = reader["TelefonoCasa"].ToString();
+                        this.TelefonoMovil = reader["TelefonoMovil"].ToString();
+                        this.Email = reader["Email"].ToString();
+                        this.Observaciones = reader["Observaciones"].ToString();
+                        this.Matricula = reader["Matricula"].ToString();
+                        this.CarreraID = Convert.ToInt32(reader["CarreraID"].ToString());
+                        this.Balance = Convert.ToDouble(reader["Balance"].ToString());
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                this.Connection.Close();
+            }
+            return this;
+        }
+
+        public bool Actualizar()
+        {
+            try
+            {
+                Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandText = "sp_actualizarEstudiante";
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.Parameters.AddWithValue("@estudianteID", this.EstudianteID);
+                Command.Parameters.AddWithValue("@nombre", this.Nombre);
+                Command.Parameters.AddWithValue("@apellido", this.Apellido);
+                Command.Parameters.AddWithValue("@fechaNacimiento", this.FechaNacimiento);
+                Command.Parameters.AddWithValue("@cedula", this.Cedula);
+                Command.Parameters.AddWithValue("@tipoEstudianteID", this.TipodeEstudianteID);
+                Command.Parameters.AddWithValue("@sexo", this.Sexo);
+                Command.Parameters.AddWithValue("@estadoCivil", this.EstadoCivil);
+                Command.Parameters.AddWithValue("@telefonoCasa", this.TelefonoCasa);
+                Command.Parameters.AddWithValue("@telefonoMovil", this.TelefonoMovil);
+                Command.Parameters.AddWithValue("@email", this.Email);
+                Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
+                Command.Parameters.AddWithValue("@CarreraID", this.CarreraID);
+
+                if (Command.ExecuteNonQuery() > 0)
+                {
+                    Connection.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Error.ID = 1; // 1: hay un error
+                Error.Mensaje = ex.Message; //el mensaje de error
+                return false;
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return false;
+        }
+
+
+        public Inscripcion VerificarInscripcionExistente()
+        {
+            Inscripcion ins = new Inscripcion();
+            try
+            {
+                Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "sp_verificarInscipcionExistente";
+                Command.Parameters.AddWithValue("@estudianteID", this.EstudianteID);
+                SqlDataReader reader;
+                reader = Command.ExecuteReader();
+                if (reader != null)
+                {
+                    if (reader.HasRows)
+                    {
+                        if (reader.Read())
+                        {
+                            ins.InscripcionID = Convert.ToInt32(reader["InscripcionID"].ToString());
+                            ins.EstudianteID = this.EstudianteID;
+                            ins.Fecha = Convert.ToDateTime(reader["Fecha"].ToString());
+                            ins.NombareEstudiante = this.Nombre + " " + this.Apellido;
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return ins;
+        }
+
     }
 }

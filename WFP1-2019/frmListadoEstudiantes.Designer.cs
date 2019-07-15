@@ -47,6 +47,7 @@
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnEnlazar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,7 +143,6 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Enabled = false;
             this.btnModificar.Location = new System.Drawing.Point(607, 67);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
@@ -215,12 +215,25 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Total";
             // 
+            // btnEnlazar
+            // 
+            this.btnEnlazar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnEnlazar.Location = new System.Drawing.Point(607, 96);
+            this.btnEnlazar.Name = "btnEnlazar";
+            this.btnEnlazar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnlazar.TabIndex = 23;
+            this.btnEnlazar.Text = "Enlazar";
+            this.btnEnlazar.UseVisualStyleBackColor = true;
+            this.btnEnlazar.Visible = false;
+            this.btnEnlazar.Click += new System.EventHandler(this.btnEnlazar_Click);
+            // 
             // frmListadoEstudiantes
             // 
             this.AcceptButton = this.btnBuscar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 340);
+            this.Controls.Add(this.btnEnlazar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBusqueda);
@@ -258,5 +271,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCedula;
+        private System.Windows.Forms.Button btnEnlazar;
     }
 }

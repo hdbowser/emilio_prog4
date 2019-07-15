@@ -121,3 +121,6 @@ C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.exe
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.pdb
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmEditorSeccion.resources
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmConflictoSecciones.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmListadoAsignaturas.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmInscripcion.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmCobroCuenta.resources

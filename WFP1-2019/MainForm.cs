@@ -224,5 +224,24 @@ namespace WFP1_2019
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void asignaturaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmListadoAsignaturas frm = new frmListadoAsignaturas();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void inscripciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInscripcion frm = new frmInscripcion();
+            frm.Show();
+        }
+
+        private void cobrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCobroCuenta frm = new frmCobroCuenta();
+            frm.ShowDialog();
+        }
     }
 }

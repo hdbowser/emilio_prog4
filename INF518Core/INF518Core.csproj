@@ -46,6 +46,8 @@
     <Compile Include="Clases\Carrera.cs" />
     <Compile Include="Clases\Centro.cs" />
     <Compile Include="Clases\Estudiante.cs" />
+    <Compile Include="Clases\Inscripcion.cs" />
+    <Compile Include="Clases\PagoEstudiante.cs" />
     <Compile Include="Clases\Profesor.cs" />
     <Compile Include="Clases\Response.cs" />
     <Compile Include="Clases\Seccion.cs" />

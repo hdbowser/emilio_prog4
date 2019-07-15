@@ -123,7 +123,7 @@ namespace WFP1_2019
         private void Registrar()
         {
             AsignarValores();
-           if (this.profesor.Registrar())
+            if (this.profesor.Registrar())
             {
                 MessageBox.Show("Se ha registrado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
@@ -131,7 +131,7 @@ namespace WFP1_2019
             else
             {
                 MessageBox.Show("No se pudo realizar el registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-  
+
             }
         }
 

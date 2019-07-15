@@ -96,6 +96,12 @@
     <Compile Include="frmCentro.Designer.cs">
       <DependentUpon>frmCentro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCobroCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobroCuenta.Designer.cs">
+      <DependentUpon>frmCobroCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConflictoSecciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,12 @@
     <Compile Include="frmEstudiante.Designer.cs">
       <DependentUpon>frmEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInscripcion.Designer.cs">
+      <DependentUpon>frmInscripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListadoEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
     </Compile>
     <Compile Include="frmSecciones.Designer.cs">
       <DependentUpon>frmSecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoAsignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoAsignaturas.Designer.cs">
+      <DependentUpon>frmListadoAsignaturas.cs</DependentUpon>
     </Compile>
     <Compile Include="Loging.cs">
       <SubType>Form</SubType>
@@ -200,6 +218,9 @@
     <EmbeddedResource Include="frmCentro.resx">
       <DependentUpon>frmCentro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCobroCuenta.resx">
+      <DependentUpon>frmCobroCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConflictoSecciones.resx">
       <DependentUpon>frmConflictoSecciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +236,9 @@
     <EmbeddedResource Include="frmEstudiante.resx">
       <DependentUpon>frmEstudiante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInscripcion.resx">
+      <DependentUpon>frmInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListadoEstudiantes.resx">
       <DependentUpon>frmListadoEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSecciones.resx">
       <DependentUpon>frmSecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoAsignaturas.resx">
+      <DependentUpon>frmListadoAsignaturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.cs</DependentUpon>

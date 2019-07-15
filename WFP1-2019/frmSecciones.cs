@@ -22,6 +22,8 @@ namespace WFP1_2019
             cbbAsignatura.ValueMember = "AsignaturaID";
         }
 
+        public Seccion SeccionSeleccionada { get; set; }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -41,19 +43,32 @@ namespace WFP1_2019
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Seccion s = new Seccion();
-            s.SeccionID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].FormattedValue.ToString());
-            s = s.Detalle();
-            frmEditorSeccion frm = new frmEditorSeccion(s);
-            frm.ShowDialog();
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
             if (dataGridView1.SelectedRows.Count == 1)
             {
-                btnModificar.Enabled = true;
+                Seccion s = new Seccion();
+                s.SeccionID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].FormattedValue.ToString());
+                s = s.Detalle();
+                frmEditorSeccion frm = new frmEditorSeccion(s);
+                frm.ShowDialog();
             }
+        }
+        public void ModoBusqueda()
+        {
+            btnEnlazar.Visible = true;
+            btnModificar.Enabled = false;
+            btnNuevo.Enabled = false;
+            this.SeccionSeleccionada = new Seccion();
+        }
+
+        private void btnEnlazar_Click(object sender, EventArgs e)
+        {
+            this.SeccionSeleccionada = new Seccion();
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                this.SeccionSeleccionada.SeccionID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].FormattedValue.ToString());
+                this.SeccionSeleccionada = SeccionSeleccionada.Detalle();
+            }
+            this.Close();
         }
     }
 }
