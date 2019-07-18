@@ -89,6 +89,7 @@ namespace WFP1_2019
             {
                 this.ActualizarPermisos(item);
             }
+            lblNombreUsuario.Text = this.usuarioActual.Nombre;
         }
 
         private void pruevaLogingToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -118,10 +119,6 @@ namespace WFP1_2019
 
         private void estudianteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            //frmEstudiante frm = new frmEstudiante(0);
-            //frm.StartPosition = FormStartPosition.CenterScreen;
-            //frm.ShowDialog();
-
             frmListadoEstudiantes est = new frmListadoEstudiantes();
             est.StartPosition = FormStartPosition.CenterScreen;
             est.MdiParent = this;
@@ -242,6 +239,34 @@ namespace WFP1_2019
         {
             frmCobroCuenta frm = new frmCobroCuenta();
             frm.ShowDialog();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoUsuarios frm = new frmListadoUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void cambiarDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Loging frm = new Loging();
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                this.usuarioActual = frm.UsuarioActual;
+                this.ActualizarPermisos(sistemaToolStripMenuItem);
+                foreach (ToolStripMenuItem item in menuStrip1.Items)
+                {
+                    this.ActualizarPermisos(item);
+                }
+                lblNombreUsuario.Text = this.usuarioActual.Nombre;
+            }
+        }
+
+        private void imprimirListadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sorry, no me dió tiempo a terminar estar parte", "Mensaje", MessageBoxButtons.RetryCancel, MessageBoxIcon.Exclamation);
         }
     }
 }

@@ -33,6 +33,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SeccionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Asignatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraInicioDia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraFinDia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraInicioDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraFinDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnDetalleSeccion = new System.Windows.Forms.Button();
             this.btnEliminarSeccion = new System.Windows.Forms.Button();
@@ -45,15 +54,6 @@
             this.btnSeleccionar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEstudiante = new System.Windows.Forms.TextBox();
-            this.SeccionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Asignatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Aula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraInicioDia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraFinDia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraInicioDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraFinDia2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -131,6 +131,71 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(790, 227);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // SeccionID
+            // 
+            this.SeccionID.DataPropertyName = "SeccionID";
+            this.SeccionID.HeaderText = "ID";
+            this.SeccionID.Name = "SeccionID";
+            this.SeccionID.ReadOnly = true;
+            // 
+            // Asignatura
+            // 
+            this.Asignatura.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Asignatura.DataPropertyName = "Asignatura";
+            this.Asignatura.HeaderText = "Asignatura";
+            this.Asignatura.Name = "Asignatura";
+            this.Asignatura.ReadOnly = true;
+            this.Asignatura.Width = 82;
+            // 
+            // Aula
+            // 
+            this.Aula.DataPropertyName = "Aula";
+            this.Aula.HeaderText = "Aula";
+            this.Aula.Name = "Aula";
+            this.Aula.ReadOnly = true;
+            // 
+            // Dia1
+            // 
+            this.Dia1.DataPropertyName = "Dia1";
+            this.Dia1.HeaderText = "Dia 1";
+            this.Dia1.Name = "Dia1";
+            this.Dia1.ReadOnly = true;
+            // 
+            // HoraInicioDia1
+            // 
+            this.HoraInicioDia1.DataPropertyName = "HoraInicioDia1";
+            this.HoraInicioDia1.HeaderText = "Inicio dia 1";
+            this.HoraInicioDia1.Name = "HoraInicioDia1";
+            this.HoraInicioDia1.ReadOnly = true;
+            // 
+            // HoraFinDia1
+            // 
+            this.HoraFinDia1.DataPropertyName = "HoraFinDia1";
+            this.HoraFinDia1.HeaderText = "Fin dia 1";
+            this.HoraFinDia1.Name = "HoraFinDia1";
+            this.HoraFinDia1.ReadOnly = true;
+            // 
+            // Dia2
+            // 
+            this.Dia2.DataPropertyName = "Dia2";
+            this.Dia2.HeaderText = "Dia 2";
+            this.Dia2.Name = "Dia2";
+            this.Dia2.ReadOnly = true;
+            // 
+            // HoraInicioDia2
+            // 
+            this.HoraInicioDia2.DataPropertyName = "HoraInicioDia2";
+            this.HoraInicioDia2.HeaderText = "Inicio dia 2";
+            this.HoraInicioDia2.Name = "HoraInicioDia2";
+            this.HoraInicioDia2.ReadOnly = true;
+            // 
+            // HoraFinDia2
+            // 
+            this.HoraFinDia2.DataPropertyName = "HoraFinDia2";
+            this.HoraFinDia2.HeaderText = "Fin dia 2";
+            this.HoraFinDia2.Name = "HoraFinDia2";
+            this.HoraFinDia2.ReadOnly = true;
             // 
             // panel4
             // 
@@ -220,6 +285,7 @@
             this.btnAnular.TabIndex = 7;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Visible = false;
             // 
             // btnGuardar
             // 
@@ -228,7 +294,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 6;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Crear";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -259,71 +325,6 @@
             this.txtEstudiante.ReadOnly = true;
             this.txtEstudiante.Size = new System.Drawing.Size(339, 20);
             this.txtEstudiante.TabIndex = 3;
-            // 
-            // SeccionID
-            // 
-            this.SeccionID.DataPropertyName = "SeccionID";
-            this.SeccionID.HeaderText = "ID";
-            this.SeccionID.Name = "SeccionID";
-            this.SeccionID.ReadOnly = true;
-            // 
-            // Asignatura
-            // 
-            this.Asignatura.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Asignatura.DataPropertyName = "Asignatura";
-            this.Asignatura.HeaderText = "Asignatura";
-            this.Asignatura.Name = "Asignatura";
-            this.Asignatura.ReadOnly = true;
-            this.Asignatura.Width = 82;
-            // 
-            // Aula
-            // 
-            this.Aula.DataPropertyName = "Aula";
-            this.Aula.HeaderText = "Aula";
-            this.Aula.Name = "Aula";
-            this.Aula.ReadOnly = true;
-            // 
-            // Dia1
-            // 
-            this.Dia1.DataPropertyName = "Dia1";
-            this.Dia1.HeaderText = "Dia 1";
-            this.Dia1.Name = "Dia1";
-            this.Dia1.ReadOnly = true;
-            // 
-            // HoraInicioDia1
-            // 
-            this.HoraInicioDia1.DataPropertyName = "HoraInicioDia1";
-            this.HoraInicioDia1.HeaderText = "Inicio dia 1";
-            this.HoraInicioDia1.Name = "HoraInicioDia1";
-            this.HoraInicioDia1.ReadOnly = true;
-            // 
-            // HoraFinDia1
-            // 
-            this.HoraFinDia1.DataPropertyName = "HoraFinDia1";
-            this.HoraFinDia1.HeaderText = "Fin dia 1";
-            this.HoraFinDia1.Name = "HoraFinDia1";
-            this.HoraFinDia1.ReadOnly = true;
-            // 
-            // Dia2
-            // 
-            this.Dia2.DataPropertyName = "Dia2";
-            this.Dia2.HeaderText = "Dia 2";
-            this.Dia2.Name = "Dia2";
-            this.Dia2.ReadOnly = true;
-            // 
-            // HoraInicioDia2
-            // 
-            this.HoraInicioDia2.DataPropertyName = "HoraInicioDia2";
-            this.HoraInicioDia2.HeaderText = "Inicio dia 2";
-            this.HoraInicioDia2.Name = "HoraInicioDia2";
-            this.HoraInicioDia2.ReadOnly = true;
-            // 
-            // HoraFinDia2
-            // 
-            this.HoraFinDia2.DataPropertyName = "HoraFinDia2";
-            this.HoraFinDia2.HeaderText = "Fin dia 2";
-            this.HoraFinDia2.Name = "HoraFinDia2";
-            this.HoraFinDia2.ReadOnly = true;
             // 
             // frmInscripcion
             // 

@@ -46,7 +46,7 @@ namespace WFP1_2019
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }

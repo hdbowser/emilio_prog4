@@ -52,6 +52,7 @@
     <Compile Include="Clases\Response.cs" />
     <Compile Include="Clases\Seccion.cs" />
     <Compile Include="Clases\TipoEstudiante.cs" />
+    <Compile Include="Clases\TipoUsuario.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Inscripcion\Mantenimiento.cs" />
     <Compile Include="Clases\MantenimientoBase.cs" />

@@ -162,8 +162,5 @@ namespace INF518Core.Clases
             }
             return resultado;
         }
-
     }
-
-
 }

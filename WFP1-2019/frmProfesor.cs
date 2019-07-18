@@ -149,7 +149,6 @@ namespace WFP1_2019
             }
         }
 
-
         public void AsignarValores()
         {
             this.profesor.Nombre = txtNombre.Text;

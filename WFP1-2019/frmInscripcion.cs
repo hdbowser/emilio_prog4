@@ -108,6 +108,7 @@ namespace WFP1_2019
                 btnEliminarSeccion.Enabled = true;
                 txtFecha.Text = this.inscripcion.Fecha.ToShortDateString();
                 dataGridView1.DataSource = inscripcion.ListadoSecciones();
+                btnGuardar.Enabled = false;
             }
             else
             {
