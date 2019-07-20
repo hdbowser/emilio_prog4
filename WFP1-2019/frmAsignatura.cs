@@ -20,7 +20,7 @@ namespace WFP1_2019
             this.Inicializar();
         }
 
-        public frmAsignatura( Asignatura a)
+        public frmAsignatura(Asignatura a)
         {
             InitializeComponent();
             this.asignatura = a;
@@ -51,7 +51,16 @@ namespace WFP1_2019
 
         private void Actualizar()
         {
-            MessageBox.Show("Actualizar");
+            AsignarValores();
+            if (this.asignatura.Actualizar())
+            {
+                MessageBox.Show("Se ha actualizado el elemento correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Error al actualizar el registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
 
         private void Registrar()
@@ -65,7 +74,6 @@ namespace WFP1_2019
             else
             {
                 MessageBox.Show("No se pudo realizar el registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
 
@@ -112,7 +120,7 @@ namespace WFP1_2019
 
         private void frmAsignatura_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

@@ -52,12 +52,6 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Asignaturas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Asignaturas.Designer.cs">
-      <DependentUpon>Asignaturas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Clases\Extensiones.cs" />
     <Compile Include="frmActualizaPerfil.cs">
       <SubType>Form</SubType>
@@ -71,6 +65,12 @@
     <Compile Include="frmAsignatura.Designer.cs">
       <DependentUpon>frmAsignatura.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAula.Designer.cs">
+      <DependentUpon>frmAula.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAulla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="frmBackUp.Designer.cs">
       <DependentUpon>frmBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioPassword.Designer.cs">
+      <DependentUpon>frmCambioPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCentro.cs">
       <SubType>Form</SubType>
@@ -130,6 +136,18 @@
     </Compile>
     <Compile Include="frmInscripcion.Designer.cs">
       <DependentUpon>frmInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoAulas.Designer.cs">
+      <DependentUpon>frmListadoAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoCentros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoCentros.Designer.cs">
+      <DependentUpon>frmListadoCentros.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListadoEstudiantes.cs">
       <SubType>Form</SubType>
@@ -196,20 +214,23 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Asignaturas.resx">
-      <DependentUpon>Asignaturas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmActualizaPerfil.resx">
       <DependentUpon>frmActualizaPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsignatura.resx">
       <DependentUpon>frmAsignatura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAula.resx">
+      <DependentUpon>frmAula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAulla.resx">
       <DependentUpon>frmAulla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBackUp.resx">
       <DependentUpon>frmBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioPassword.resx">
+      <DependentUpon>frmCambioPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCentro.resx">
       <DependentUpon>frmCentro.cs</DependentUpon>
@@ -234,6 +255,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInscripcion.resx">
       <DependentUpon>frmInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoAulas.resx">
+      <DependentUpon>frmListadoAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoCentros.resx">
+      <DependentUpon>frmListadoCentros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoEstudiantes.resx">
       <DependentUpon>frmListadoEstudiantes.cs</DependentUpon>

@@ -157,24 +157,12 @@ namespace WFP1_2019
             frm.Show();
 
         }
-
-        private void asignaturasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Asignaturas frm = new Asignaturas();
-            frm.StartPosition = FormStartPosition.CenterScreen;
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
         private void realizarBackUpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBackUp frm = new WFP1_2019.frmBackUp();
             frm.MdiParent = this;
             frm.Show();
         }
-
-
-
 
         //METODOS ===========================================================================================================================
 
@@ -193,6 +181,10 @@ namespace WFP1_2019
                             if (!CompararPermisos(usuarioActual.Permisos, tag))
                             {
                                 ((ToolStripMenuItem)item).Enabled = false;
+                            }
+                            else
+                            {
+                                ((ToolStripMenuItem)item).Enabled = true;
                             }
                         }
                         else
@@ -267,6 +259,26 @@ namespace WFP1_2019
         private void imprimirListadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Sorry, no me dió tiempo a terminar estar parte", "Mensaje", MessageBoxButtons.RetryCancel, MessageBoxIcon.Exclamation);
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCambioPassword frm = new frmCambioPassword(this.usuarioActual);
+            frm.ShowDialog();
+        }
+
+        private void centroToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmListadoCentros frm = new frmListadoCentros();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void aulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoAulas frm = new frmListadoAulas();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

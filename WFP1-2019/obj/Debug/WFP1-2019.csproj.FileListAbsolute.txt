@@ -98,7 +98,6 @@ C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\bin\Debug\INF518Core.dl
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\bin\Debug\INF518Core.pdb
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.csprojResolveAssemblyReference.cache
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.Admin.resources
-C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.Asignaturas.resources
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmActualizaPerfil.resources
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmAsignatura.resources
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmAulla.resources
@@ -124,3 +123,7 @@ C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.csp
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.exe
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1-2019.pdb
 C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmListadoUsuarios.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmCambioPassword.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmListadoCentros.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmListadoAulas.resources
+C:\Users\hdbow\Documents\Proyectos\EmilioProg4\WFP1-2019\obj\Debug\WFP1_2019.frmAula.resources

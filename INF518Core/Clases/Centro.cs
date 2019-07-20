@@ -12,7 +12,7 @@ namespace INF518Core.Clases
     {
         public int CentroID { get; set; }
         public string Nombre { get; set; }
-        public string Descripcion { get; set; }
+        public string NombreCorto { get; set; }
         public string WebSite { get; set; }
         public string Telefono { get; set; }
         public string Observaciones { get; set; }
@@ -41,6 +41,38 @@ namespace INF518Core.Clases
                 Connection.Close();
             }
             return dt;
+        }
+
+        public bool Registrar()
+        {
+            bool status = false;
+            try
+            {
+                Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandText = "sp_crearCentro";
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.Parameters.AddWithValue("@nombre", this.Nombre);
+                Command.Parameters.AddWithValue("@nombreCorto", this.NombreCorto);
+                Command.Parameters.AddWithValue("@webSite", this.WebSite);
+                Command.Parameters.AddWithValue("@telefono", this.Telefono);
+                Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
+                if (Command.ExecuteNonQuery() > 0)
+                {
+                    status = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Error.ID = 1; // 1: hay un error
+                Error.Mensaje = ex.Message; //el mensaje de error
+                status = false;
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return status;
         }
     }
 }

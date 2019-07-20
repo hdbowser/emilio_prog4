@@ -108,5 +108,37 @@ namespace INF518Core.Clases
             return this;
         }
 
+        public bool Actualizar()
+        {
+            try
+            {
+                Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandText = "sp_actualizarAsignatura";
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.Parameters.AddWithValue("@asignaturaID", this.AsignaturaID);
+                Command.Parameters.AddWithValue("@descripcion", this.Descripcion);
+                Command.Parameters.AddWithValue("@carreraID", this.CarreraID);
+                Command.Parameters.AddWithValue("@codigo", this.Codigo);
+                Command.Parameters.AddWithValue("@creditos", this.Creditos);
+                Command.Parameters.AddWithValue("@observaciones", this.Observaciones);
+                if (Command.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Error.ID = 1; // 1: hay un error
+                Error.Mensaje = ex.Message; //el mensaje de error
+                return false;
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return false;
+        }
+
     }
 }

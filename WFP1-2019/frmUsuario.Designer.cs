@@ -33,14 +33,14 @@
             this.cbbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -60,14 +60,14 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.cbbTipoUsuario);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(10, 12);
             this.groupBox1.Name = "groupBox1";
@@ -103,16 +103,6 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Password *";
             // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(108, 51);
-            this.txtUsuario.MaxLength = 50;
-            this.txtUsuario.Multiline = true;
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(202, 20);
-            this.txtUsuario.TabIndex = 2;
-            this.txtUsuario.Tag = "*";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -141,16 +131,6 @@
             this.label12.Size = new System.Drawing.Size(78, 13);
             this.label12.TabIndex = 27;
             this.label12.Text = "Observaciones";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(108, 16);
-            this.txtNombre.MaxLength = 50;
-            this.txtNombre.Multiline = true;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(202, 20);
-            this.txtNombre.TabIndex = 1;
-            this.txtNombre.Tag = "*";
             // 
             // label3
             // 
@@ -184,9 +164,25 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(109, 19);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(201, 20);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Tag = "*";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(109, 54);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(201, 20);
+            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Tag = "*";
+            // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(109, 86);
+            this.txtPassword.Location = new System.Drawing.Point(109, 83);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(201, 20);
             this.txtPassword.TabIndex = 3;
@@ -215,16 +211,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cbbTipoUsuario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }

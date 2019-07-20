@@ -11,35 +11,16 @@ using INF518Core.Clases;
 
 namespace WFP1_2019
 {
-    public partial class frmCentro : Form
+    public partial class frmAula : Form
     {
-        public frmCentro()
+        public frmAula()
         {
             InitializeComponent();
-            this.centro = new Centro();
-        }
-        Centro centro;
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if (this.ValidarFormulario())
-            {
-                if (this.centro.CentroID > 0)
-                {
-                    Actualizar();
-                }
-                else
-                {
-                    Registrar();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Los campos con (*) son obligatorios");
-            }
+            this.aula = new Aula();
+            this.Inicializar();
         }
 
-
+        Aula aula;
         public bool ValidarFormulario()
         {
             foreach (var item in groupBox1.Controls)
@@ -55,15 +36,33 @@ namespace WFP1_2019
             return true;
         }
 
-        public void Actualizar()
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (this.ValidarFormulario())
+            {
+                if (this.aula.AulaID > 0)
+                {
+                    Actualizar();
+                }
+                else
+                {
+                    Registrar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Los campos con (*) son obligatorios");
+            }
+        }
+
+        private void Actualizar()
         {
 
         }
-
-        public void Registrar()
+        private void Registrar()
         {
             AsignarValores();
-            if (this.centro.Registrar())
+            if (this.aula.Registrar())
             {
                 MessageBox.Show("Se ha registrado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
@@ -72,15 +71,23 @@ namespace WFP1_2019
             {
                 MessageBox.Show("No se pudo realizar el registro", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         public void AsignarValores()
         {
-            this.centro.Nombre = txtNombre.Text;
-            this.centro.NombreCorto = txtNombreCotro.Text;
-            this.centro.WebSite = txtWebSite.Text;
-            this.centro.Telefono = txtTelefono.Text;
-            this.centro.Observaciones = txtObservaciones.Text;
+            this.aula.Descripcion = txtDescripcion.Text;
+            this.aula.Capacidad = (int)nudCapacidad.Value;
+            this.aula.CentroID = Convert.ToInt32(cbbCentro.SelectedValue);
+            this.aula.Observaciones = txtObservaciones.Text;
+        }
+
+        private void Inicializar()
+        {
+            Centro c = new Centro();
+            this.cbbCentro.DataSource = c.Buscar("");
+            this.cbbCentro.ValueMember = "CentroID";
+            this.cbbCentro.DisplayMember = "nombre";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

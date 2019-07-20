@@ -57,6 +57,10 @@ namespace INF518Core.Clases
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                Connection.Close();
+            }
             return this;
         }
 
@@ -94,7 +98,7 @@ namespace INF518Core.Clases
         public bool Actualizar()
         {
             bool status = false;
-         
+
             try
             {
                 Connection.Open();
@@ -181,6 +185,35 @@ namespace INF518Core.Clases
                 this.Connection.Close();
             }
             return this;
+        }
+
+        public bool CambiarPassword()
+        {
+            bool status = false;
+
+            try
+            {
+                Connection.Open();
+                Command = Connection.CreateCommand();
+                Command.CommandText = "sp_cambiarPasswordUsario";
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.Parameters.AddWithValue("@usuarioID", this.UsuarioID);
+                Command.Parameters.AddWithValue("@password", this.Password);
+                if (Command.ExecuteNonQuery() > 0)
+                {
+                    status = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Error.ID = 1; // 1: hay un error
+                Error.Mensaje = ex.Message; //el mensaje de error
+            }
+            finally
+            {
+                Connection.Close();
+            }
+            return status;
         }
     }
 }
